@@ -1,4 +1,4 @@
-#! /bin/bash
+#!/bin/bash bash
 #############################
 # .make.sh
 # This script creates symlinks from the home directory to any desired dotfiles in ~/dotfiles
@@ -9,7 +9,7 @@
 dir=~/dotfiles		# dotfiles directory
 olddir=~/dotfiles_old	# old dotfiles backup directory
 # list of files/folders to symlink in homedir
-files="vimrc vimrc.bepo"
+files="vimrc vimrc.bepo vim"
 
 #########
 

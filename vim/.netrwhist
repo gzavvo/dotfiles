@@ -1,2 +1,11 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =0
+let g:netrw_dirhistcnt =9
+let g:netrw_dirhist_9='/home/gzavvo/Documents/code/learning/the_odin_project/rock-paper-scissors'
+let g:netrw_dirhist_8='/home/gzavvo/Documents/code/learning/the_odin_project'
+let g:netrw_dirhist_7='/home/gzavvo/Documents/code/learning/the_odin_project/calculator'
+let g:netrw_dirhist_6='/home/gzavvo/Documents/code/learning/the_odin_project/rock-paper-scissors'
+let g:netrw_dirhist_5='/home/gzavvo/Documents/code/learning/the_odin_project'
+let g:netrw_dirhist_4='/home/gzavvo/Documents/code/learning/the_odin_project/calculator'
+let g:netrw_dirhist_3='/home/gzavvo/.config/compton'
+let g:netrw_dirhist_2='/home/gzavvo/Documents/code/learning/the_odin_project/javascript-exercises/sumAll'
+let g:netrw_dirhist_1='/home/gzavvo/Documents/code/learning/the_odin_project/odin_on_rails/my_first_rails_app'

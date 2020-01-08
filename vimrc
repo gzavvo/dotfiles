@@ -1,11 +1,13 @@
 call plug#begin('~/.vim/plugged')
 
-"Plug 'elmcast/elm-vim'
-"Plug 'rust-lang/rust.vim'
+Plug 'rust-lang/rust.vim'
 Plug 'junegunn/goyo.vim'
 Plug 'arcticicestudio/nord-vim'
 
 call plug#end()
+
+" enable matchit
+runtime macros/matchit.vim
 
 source ~/.vimrc.bepo
 set mouse=a
@@ -14,14 +16,17 @@ set mouse=a
 "MAPPING
 "=======
 
+" save
+nnoremap ,s :w<CR>
+
 "escape to normal mode
 inoremap jl <esc>
 vnoremap jl <esc>
 
 "edit .vimrc
-nnoremap ,ev :vsplit $MYVIMRC<cr> 
+nnoremap ,ve :vsplit $MYVIMRC<cr> 
 " source .vimrc
-nnoremap ,sv :source $MYVIMRC<cr>
+nnoremap ,vs :source $MYVIMRC<cr>
 
 " remove highlighting of searches matches
 nnoremap ,n :noh<cr>
@@ -30,21 +35,26 @@ nnoremap ,n :noh<cr>
 noremap <BS> <C-U>
 noremap <Space> <C-D>
 
+" back to last buffer
+noremap ,b :w<cr>:b#<cr>
+
+" run python script
+nnoremap ,r :!python %<CR>
+
 "LAYOUT
 "======
 
 syntax enable
 
-"enable italic in tmux
-set t_ZH=[3m
-set t_ZR=[23m
+" enable italic in tmux
+"set t_ZH=[3m
+"set t_ZR=[23m
 
 
-set termguicolors
-set background=dark
-"let g:nord_italic=1
-"let g:nord_italic_comments=1
-let g:nord_comment_brightness=20
+"set termguicolors
+"set background=dark
+let g:nord_italic=1
+let g:nord_italic_comments=1
 colorscheme nord
 
 filetype plugin indent on
@@ -54,7 +64,7 @@ set expandtab
 
 set wrap
 set textwidth=80
-set linebreak
+"set linebreak
 set breakindent
 set colorcolumn=80
 
